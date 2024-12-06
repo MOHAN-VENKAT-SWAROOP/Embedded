@@ -1,0 +1,11 @@
+int sensorPin = A0;
+
+void setup() {
+  Serial.begin(9600); // Start serial communication
+}
+
+void loop() {
+  int level = analogRead(sensorPin); // Read water level
+  Serial.println(level);            // Print level to serial monitor
+  delay(500);                       // Small delay
+}
