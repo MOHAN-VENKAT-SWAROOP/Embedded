@@ -1,0 +1,15 @@
+void setup(){
+  for(int pin=2;pin<5;pin++)
+  {
+    pinMode(pin, OUTPUT);
+  }
+}
+void loop(){
+ for(int pin=2;pin<5;pin++){
+  digitalWrite(pin, HIGH);
+  delay(100);
+  digitalWrite(pin, LOW);
+  delay(100);
+ }
+  
+}
